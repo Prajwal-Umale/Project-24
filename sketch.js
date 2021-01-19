@@ -15,7 +15,7 @@ function preload()
 }
 
 function setup() {
-	createCanvas(1500, 600);
+	createCanvas(1600, 700);
 
 
 	engine = Engine.create();
@@ -40,7 +40,7 @@ function draw() {
   
 	background(0);
 	
-	console.log(paper.x);
+	console.log(paper.y);
 
 
   rect1.display();
@@ -51,13 +51,13 @@ function draw() {
 
   paper.display();
 
-  keyPressed();
+  
 
   }
 
   function keyPressed(){
 	if(keyCode=== UP_ARROW){
-		Matter.Body.applyForce(paper.body,paper.body.position,{x:85,y:-85})
+		Matter.Body.applyForce(paper.body,paper.body.position,{x:510,y:-510})
 	}
   }
 
